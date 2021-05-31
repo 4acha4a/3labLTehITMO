@@ -23,10 +23,7 @@ Xa = - 1 / (w*Ca);
 Xb = - 1 / (w*Cb);
 Xc = - 1 / (w*Cc);
 
-% ПОЛНОЕ СОПРОТИВЛЕНИЕ
-Zab = Ra + 1j * Xa;
-Zbc = Rb + 1j * Xb;
-Zca = Rc + 1j * Xc;
+%% ПОДСЧЁТ
 
 % ПРОВОДИМОСТЬ
 Yab = 1 / Zab;
@@ -38,7 +35,10 @@ phi_a = atan(Xa/Ra);
 phi_b = atan(Xb/Rb);
 phi_c = atan(Xc/Rc);
 
-%% ПОДСЧЁТ
+% ПОЛНОЕ СОПРОТИВЛЕНИЕ
+Zab = Ra + 1j * Xa;
+Zbc = Rb + 1j * Xb;
+Zca = Rc + 1j * Xc;
 
 % НАПРЯЖЕНИЕ
 Uab = Ea - Eb;
